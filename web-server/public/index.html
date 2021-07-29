@@ -71,12 +71,3 @@
     </div>
   </body>
 </html>
-
-<!--
-  select score.* from score,
-                (select user_id,max(timestamp) as timestamp
-                     from score
-                     group by user_id) max_user
-                  where score.user_id=max_user.user_id
-                  and score.timestamp=max_user.timestamp;
--->
